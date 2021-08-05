@@ -1,7 +1,34 @@
+
+<!DOCTYPE html>
+<html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   
     <title>These are Formatting tags</title>
 
+    <style>
+        aside {
+          width: 30%;
+          padding-left: 15px;
+          margin-left: 15px;
+          float: right;
+          font-style: italic;
+          background-color: lightgray;
+        }
 
+        dd{
+            display: list-item;
+            margin: 10px;
+            color: darkcyan;
+
+        }
+        </style>
+        <base href="https://www.w3schools.com/" target="_blank">
+</head>
     <body>
         <b>This is bold</b><br>
         <u>This is underlined</u><br>
@@ -10,7 +37,7 @@
         <em>This text is emphasized</em> <br>
         <p>This is<mark>important</mark> text.</p> <br>
         This is <small>small text</small> <br>
-        This is <big>Big text</big><br>
+
         I want to <del>Delete</del> this text.<br>
         Hi<sub>123</sub> welcome.<br>
         Hi<sup>123</sup>welcome.<br>
@@ -24,8 +51,113 @@
        <h6>Header tag</h6>
 <hr>
           <h1> These are logical tags </h1>
-                 
-       
-     
-    </body>
-</head>
+          <p> Html <abbr title="Hyper text markup language."> </abbr></p>
+          <p>These are <code>logical tags</code>.</p> 
+          <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+            </blockquote> 
+          <p><dfn>HTML</dfn>This is hyper text markup language. </p>
+          <P>Press<kbd>Ctrl+C</kbd> to copy text. </P>
+          <pre>These are html logical tags</pre>
+          <p>The new version of html is <q>Html 5</q>.</p>
+          <p>Message from visual studio code <samp>error in live server<br>open in folder</samp></p>
+             <p> 1+x=4<var>X</var></p>     
+             <hr>
+         <h1>This is anchor tag </h1>
+         <a href="https://github.com/Marieya123/html-practise-">git hub</a>
+         This is a link 
+         <hr>
+         <h1>This is an address</h1>
+         <address>
+             written by <a href="marieya.ahmed007@gmail.com">marieya ahmed</a>
+             visit us at: xyz<br>
+             example.com <br>
+             pincode-12345 ,Hyderabad<br>
+             India </address>
+             <hr>
+             <h1>This is an article </h1>
+             <article>
+                 <h2>Microsoft edge</h2>
+                 <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p></p>
+             </article>
+             <hr>
+          <aside>
+              <p>The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hyperlinks, and are accessible over the Internet.</p>
+          </aside>
+          
+          
+          <hr>
+         
+          <p><img src="images/stickman.gif" width="50" height="50" alt="Stickman"> - Notice that we have only specified a relative address for the image. Since we have specified a base URL in the head section, the browser will look for the image at "https://www.w3schools.com/images/stickman.gif".</p>
+
+          <p><a href="tags/tag_base.asp">HTML base tag</a> </p>
+          
+          <ul>
+            <li>User <bdi>hrefs</bdi>: 60 points</li>
+            <li>User <bdi>jdoe</bdi>: 80 points</li>
+            <p dir="rtl">User <bdi>إيان</bdi>: 90 points</p>
+           </ul>
+           <p>Html stands dor Hyper text markup language.</p>
+           <p><bdo dir="rtl">Html stands dor Hyper text markup language.</bdo></p>
+           <hr>
+           <h1>Press this button to play sound</h1>
+           <audio controls loop>
+               <source src="Maid with the Flaxen Hair.mp3" type="audio/mp3">
+           </audio>
+           <button type="button" autofocus onclick="alert('Hello!')">Click Me!</button>
+               <br> <br>
+               <h1>The canvas element</h1>
+
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+
+
+<canvas id="BigCanvas"></canvas>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "#b3f024";
+    ctx.fillRect(30, 40, 50, 60);
+    //Turn transparency on
+    ctx.globalAlpha = "0.8";
+    ctx.fillStyle = "pink";
+    ctx.fillRect(60, 60, 60,  60);
+    ctx.fillStyle = "blue";
+    ctx.fillRect(90, 90, 90, 90);
+</script> <br> <br>
+
+ <!----absolute file path-->
+ <img src="C:\Users\home\Documents\html tutorial 2021\html-practise-\images\flower.jpg" alt="something wrong">
+
+ <!---relative file path-->
+ <img src="./images/flower.jpg"  alt="something wrong"> <br> <br>
+ <h2>This is code element</h2>
+ <p>The HTML <code>button</code> tag defines a clickable button.</p>
+
+<p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+
+<h1>These are the dl,dt and dd tags.</h1>
+<P>These elements are used to create a discription list</P>
+
+<dl>
+    <dt>Google chrome</dt>
+    <dd>Web browser</dd>
+    <dt>Apache Http server</dt>
+    <dd>Web server</dd>
+
+</dl>
+<br> <br>
+<h2>This is details element</h2>
+<details>
+           <summary>WEB SERVER</summary>
+           <p> A web server is a computer that runs websites. It's a computer program that distributes web pages as they are requisitioned. The basic objective of the web server is to store, process and deliver web pages to the users. This intercommunication is done using Hypertext Transfer Protocol (HTTP).</p>  
+</details><br> <br>
+<p>This is some text.</p>
+
+<dialog open>This is an open dialog window</dialog>
+
+<p>This is some text.</p>
+<hr>
+
+
+</body>
+</html>
